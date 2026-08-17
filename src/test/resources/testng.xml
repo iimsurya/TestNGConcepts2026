@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AllTests" parallel="tests" thread-count="3">
+  <listeners>
+    <listener class-name="TestNGListeners"/>
+  </listeners>
+  <test name="AllTests">
+    <parameter name="executorName" value="Surya"/>
+    <classes>
+      <class name="FundTransfer"/>
+      <class name="DebitCard"/>
+      <class name="NetBanking"/>
+      <class name="CreditCard"/>
+    </classes>
+  </test>
+</suite>
